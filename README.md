@@ -3,6 +3,13 @@ There is some bug when working with RecyclerView placed as a child in LinearLayo
 
 To produce behaviour just scroll down a little and tap on one of the items. A progress bar should show up and item should be updated.
 
+## Demo working
+![](video_working.mp4)
+
+## Demo failing
+![](video_failing.mp4)
+
+## Where is the problem?
 I've add two layouts for comparison: one working and one failing. You can compare  activity_bug.xml and activity_ok.xml for differences.
 
 ```xml
