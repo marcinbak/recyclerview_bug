@@ -58,4 +58,8 @@ class ProgressGenerator {
 
   fun getProgress(id: Int) = subjectsMap[id]!!.asObservable().onBackpressureLatest()
 
+  fun onDestroy() {
+    subscriptionsMap.values.forEach { it.unsubscribe() }
+  }
+
 }
